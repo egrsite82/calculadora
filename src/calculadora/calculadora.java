@@ -20,6 +20,7 @@ public class calculadora {
 			System.out.println("/: División");
 			System.out.println("s: Raíz Cuadrada");
 			System.out.println("c: Raíz Cúbica");
+			System.out.println("e: Calculó Exponencial");
 			System.out.println("q: Salir");
 			
 			sel=tecla.next();
@@ -79,6 +80,16 @@ public class calculadora {
 				r=Math.cbrt(a);
 				System.out.println("La Raíz de "+a+" es ="+r);
 				break;	
+				
+			case "e":
+				System.out.println("Seleccionó Calculo Exponencial");
+				System.out.println("Ingrese el valor base");
+				a=tecla.nextInt();
+				System.out.println("Ingrese el valor exponencial");
+				b=tecla.nextInt();
+				r=Math.pow(a, b);
+				System.out.println("El Resultado es ="+r);
+				break;
 				
 			case "q":
 				System.out.println("Seleccionó salir del sistema");
